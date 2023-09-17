@@ -1,3 +1,4 @@
+
 #
 # Copyright (C) 2019 The Android Open Source Project
 #
@@ -13,16 +14,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
 # This makefile contains the system_ext partition contents for
 # a generic phone or tablet device. Only add something here if
 # it definitely doesn't belong on other types of devices (if it
 # does, use base_system_ext.mk).
 $(call inherit-product, $(SRC_TARGET_DIR)/product/media_system_ext.mk)
-
 # /system_ext packages
 PRODUCT_PACKAGES += \
-    Launcher3QuickStep \
+    TrebuchetQuickStep \
     Provision \
     Settings \
     StorageManager \
