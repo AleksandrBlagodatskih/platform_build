@@ -13,28 +13,24 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
 # This makefile contains the product partition contents for
 # a generic phone or tablet device. Only add something here if
 # it definitely doesn't belong on other types of devices (if it
 # does, use base_product.mk).
 $(call inherit-product, $(SRC_TARGET_DIR)/product/media_product.mk)
-
 # /product packages
 PRODUCT_PACKAGES += \
-    Browser2 \
-    Calendar \
-    Camera2 \
+    Etar \
+    Aperture \
     Contacts \
     DeskClock \
     Gallery2 \
     LatinIME \
-    Music \
+    Eleven \
+	Recorder \
     OneTimeInitializer \
     preinstalled-packages-platform-handheld-product.xml \
-    QuickSearchBox \
     SettingsIntelligence \
     frameworks-base-overlays
-
 PRODUCT_PACKAGES_DEBUG += \
     frameworks-base-overlays-debug
